@@ -1,0 +1,13 @@
+{
+  "requirements_version": "requirements_v2_1",
+  "cases": [
+    {"case_key": "explicit_historical_policy_scope", "user_query": "What purchase approval threshold applied in 2025?", "decision_definition": "SUFFICIENT", "policy_support_requirement": "EXPLAINABLE_POLICY_EVIDENCE"},
+    {"case_key": "relative_temporal_scope", "user_query": "What approvals are required for a purchase above $50,000 today?", "decision_definition": "SUFFICIENT", "policy_support_requirement": "EXPLAINABLE_POLICY_EVIDENCE"},
+    {"case_key": "default_current_policy_scope", "user_query": "What approvals are required for a purchase above $50,000?", "decision_definition": "SUFFICIENT", "policy_support_requirement": "EXPLAINABLE_POLICY_EVIDENCE"},
+    {"case_key": "po_policy_scope", "user_query": "Is PO-2026-1842 compliant with procurement policy?", "decision_definition": "SUFFICIENT", "policy_support_requirement": "EXPLAINABLE_POLICY_EVIDENCE"},
+    {"case_key": "unavailable_historical_policy", "user_query": "What did the 2024 contract policy require?", "decision_definition": "SUFFICIENT", "policy_support_requirement": "EXPLAINABLE_POLICY_EVIDENCE"},
+    {"case_key": "unresolved_historical_policy_scope", "user_query": "What approvals were required for a purchase above $50,000?", "decision_definition": "MISSING_REQUIRED_SCOPE", "policy_support_requirement": "EXPLAINABLE_POLICY_EVIDENCE"},
+    {"case_key": "undefined_decision_criterion", "user_query": "Is Acme our preferred supplier?", "decision_definition": "MISSING_REQUIRED_CRITERIA", "policy_support_requirement": "NONE"},
+    {"case_key": "ambiguous_entity", "user_query": "Is the purchase order compliant?", "decision_definition": "AMBIGUOUS_ENTITY", "policy_support_requirement": "NONE"}
+  ]
+}

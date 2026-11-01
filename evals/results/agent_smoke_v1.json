@@ -1,0 +1,16 @@
+{
+  "status": "skipped",
+  "reason": "OPENAI_API_KEY is not configured; no live Agent request was made.",
+  "case_ids": [
+    "TASK-001",
+    "TASK-002",
+    "TASK-009",
+    "TASK-010",
+    "TASK-014",
+    "TASK-020",
+    "TASK-025",
+    "TASK-033",
+    "TASK-035",
+    "TASK-030"
+  ]
+}

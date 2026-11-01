@@ -1,0 +1,246 @@
+{
+  "metrics": {
+    "case_count": 15,
+    "fail": {
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "overall_compliance_accuracy": 1.0,
+    "pass": {
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "review": {
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "rule_level_accuracy": 1.0
+  },
+  "records": [
+    {
+      "actual": {
+        "approval": "FAIL",
+        "contract": "PASS",
+        "overall": "FAIL"
+      },
+      "case_id": "CMP-001",
+      "expected": {
+        "approval": "FAIL",
+        "contract": "PASS",
+        "overall": "FAIL"
+      },
+      "passed": true,
+      "po_number": "PO-2026-1842"
+    },
+    {
+      "actual": {
+        "approval": "PASS",
+        "contract": "PASS",
+        "overall": "PASS"
+      },
+      "case_id": "CMP-002",
+      "expected": {
+        "approval": "PASS",
+        "contract": "PASS",
+        "overall": "PASS"
+      },
+      "passed": true,
+      "po_number": "PO-2026-1846"
+    },
+    {
+      "actual": {
+        "approval": "REVIEW",
+        "contract": "PASS",
+        "overall": "REVIEW"
+      },
+      "case_id": "CMP-003",
+      "expected": {
+        "approval": "REVIEW",
+        "contract": "PASS",
+        "overall": "REVIEW"
+      },
+      "passed": true,
+      "po_number": "PO-2026-1847"
+    },
+    {
+      "actual": {
+        "approval": "PASS",
+        "contract": "FAIL",
+        "overall": "FAIL"
+      },
+      "case_id": "CMP-004",
+      "expected": {
+        "approval": "PASS",
+        "contract": "FAIL",
+        "overall": "FAIL"
+      },
+      "passed": true,
+      "po_number": "PO-2026-1837"
+    },
+    {
+      "actual": {
+        "approval": "PASS",
+        "contract": "REVIEW",
+        "overall": "REVIEW"
+      },
+      "case_id": "CMP-005",
+      "expected": {
+        "approval": "PASS",
+        "contract": "REVIEW",
+        "overall": "REVIEW"
+      },
+      "passed": true,
+      "po_number": "PO-2026-1838"
+    },
+    {
+      "actual": {
+        "approval": "PASS",
+        "contract": "FAIL",
+        "overall": "FAIL"
+      },
+      "case_id": "CMP-006",
+      "expected": {
+        "approval": "PASS",
+        "contract": "FAIL",
+        "overall": "FAIL"
+      },
+      "passed": true,
+      "po_number": "PO-2026-1839"
+    },
+    {
+      "actual": {
+        "approval": "PASS",
+        "contract": "PASS",
+        "overall": "PASS"
+      },
+      "case_id": "CMP-007",
+      "expected": {
+        "approval": "PASS",
+        "contract": "PASS",
+        "overall": "PASS"
+      },
+      "passed": true,
+      "po_number": "PO-2026-1840"
+    },
+    {
+      "actual": {
+        "approval": "FAIL",
+        "contract": "PASS",
+        "overall": "FAIL"
+      },
+      "case_id": "CMP-008",
+      "expected": {
+        "approval": "FAIL",
+        "contract": "PASS",
+        "overall": "FAIL"
+      },
+      "passed": true,
+      "po_number": "PO-2026-1848"
+    },
+    {
+      "actual": {
+        "approval": "FAIL",
+        "contract": "PASS",
+        "overall": "FAIL"
+      },
+      "case_id": "CMP-009",
+      "expected": {
+        "approval": "FAIL",
+        "contract": "PASS",
+        "overall": "FAIL"
+      },
+      "passed": true,
+      "po_number": "PO-2026-1849"
+    },
+    {
+      "actual": {
+        "approval": "FAIL",
+        "contract": "PASS",
+        "overall": "FAIL"
+      },
+      "case_id": "CMP-010",
+      "expected": {
+        "approval": "FAIL",
+        "contract": "PASS",
+        "overall": "FAIL"
+      },
+      "passed": true,
+      "po_number": "PO-2026-1850"
+    },
+    {
+      "actual": {
+        "approval": "FAIL",
+        "contract": "PASS",
+        "overall": "FAIL"
+      },
+      "case_id": "CMP-011",
+      "expected": {
+        "approval": "FAIL",
+        "contract": "PASS",
+        "overall": "FAIL"
+      },
+      "passed": true,
+      "po_number": "PO-2026-1851"
+    },
+    {
+      "actual": {
+        "approval": "FAIL",
+        "contract": "PASS",
+        "overall": "FAIL"
+      },
+      "case_id": "CMP-012",
+      "expected": {
+        "approval": "FAIL",
+        "contract": "PASS",
+        "overall": "FAIL"
+      },
+      "passed": true,
+      "po_number": "PO-2026-1852"
+    },
+    {
+      "actual": {
+        "approval": "FAIL",
+        "contract": "PASS",
+        "overall": "FAIL"
+      },
+      "case_id": "CMP-013",
+      "expected": {
+        "approval": "FAIL",
+        "contract": "PASS",
+        "overall": "FAIL"
+      },
+      "passed": true,
+      "po_number": "PO-2026-1853"
+    },
+    {
+      "actual": {
+        "approval": null,
+        "contract": null,
+        "overall": "PASS"
+      },
+      "case_id": "CMP-014",
+      "expected": {
+        "approval": null,
+        "contract": null,
+        "overall": "PASS"
+      },
+      "passed": true,
+      "po_number": "PO-2026-1862"
+    },
+    {
+      "actual": {
+        "approval": null,
+        "contract": null,
+        "overall": "REVIEW"
+      },
+      "case_id": "CMP-015",
+      "expected": {
+        "approval": null,
+        "contract": null,
+        "overall": "REVIEW"
+      },
+      "passed": true,
+      "po_number": "PO-2025-0421"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "cases": [
+    {"case_id": "CMP-001", "po_number": "PO-2026-1842", "approval": "FAIL", "contract": "PASS", "overall": "FAIL"},
+    {"case_id": "CMP-002", "po_number": "PO-2026-1846", "approval": "PASS", "contract": "PASS", "overall": "PASS"},
+    {"case_id": "CMP-003", "po_number": "PO-2026-1847", "approval": "REVIEW", "contract": "PASS", "overall": "REVIEW"},
+    {"case_id": "CMP-004", "po_number": "PO-2026-1837", "approval": "PASS", "contract": "FAIL", "overall": "FAIL"},
+    {"case_id": "CMP-005", "po_number": "PO-2026-1838", "approval": "PASS", "contract": "REVIEW", "overall": "REVIEW"},
+    {"case_id": "CMP-006", "po_number": "PO-2026-1839", "approval": "PASS", "contract": "FAIL", "overall": "FAIL"},
+    {"case_id": "CMP-007", "po_number": "PO-2026-1840", "approval": "PASS", "contract": "PASS", "overall": "PASS"},
+    {"case_id": "CMP-008", "po_number": "PO-2026-1848", "approval": "FAIL", "contract": "PASS", "overall": "FAIL"},
+    {"case_id": "CMP-009", "po_number": "PO-2026-1849", "approval": "FAIL", "contract": "PASS", "overall": "FAIL"},
+    {"case_id": "CMP-010", "po_number": "PO-2026-1850", "approval": "FAIL", "contract": "PASS", "overall": "FAIL"},
+    {"case_id": "CMP-011", "po_number": "PO-2026-1851", "approval": "FAIL", "contract": "PASS", "overall": "FAIL"},
+    {"case_id": "CMP-012", "po_number": "PO-2026-1852", "approval": "FAIL", "contract": "PASS", "overall": "FAIL"},
+    {"case_id": "CMP-013", "po_number": "PO-2026-1853", "approval": "FAIL", "contract": "PASS", "overall": "FAIL"},
+    {"case_id": "CMP-014", "po_number": "PO-2026-1862", "approval": null, "contract": null, "overall": "PASS"},
+    {"case_id": "CMP-015", "po_number": "PO-2025-0421", "approval": null, "contract": null, "overall": "REVIEW"}
+  ]
+}

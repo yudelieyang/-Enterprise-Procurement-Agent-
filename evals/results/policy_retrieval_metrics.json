@@ -1,0 +1,37 @@
+{
+  "chunk_count": 30,
+  "chunk_registry_hash": "faed7d6183568d42e56ae7cf5c01d2092da018140d16652a16c0807264fa4a16",
+  "modes": {
+    "dense": {
+      "case_count": 21,
+      "empty_candidate_case_count": 1,
+      "empty_candidate_pass_count": 1,
+      "hit_at_1": 0.75,
+      "hit_at_3": 0.85,
+      "mrr": 0.7916666666666666,
+      "recall_at_3": 0.8083333333333333,
+      "scored_case_count": 20
+    },
+    "hybrid": {
+      "case_count": 21,
+      "empty_candidate_case_count": 1,
+      "empty_candidate_pass_count": 1,
+      "hit_at_1": 0.8,
+      "hit_at_3": 0.85,
+      "mrr": 0.825,
+      "recall_at_3": 0.8083333333333333,
+      "scored_case_count": 20
+    },
+    "lexical": {
+      "case_count": 21,
+      "empty_candidate_case_count": 1,
+      "empty_candidate_pass_count": 1,
+      "hit_at_1": 0.7,
+      "hit_at_3": 0.85,
+      "mrr": 0.7666666666666667,
+      "recall_at_3": 0.8083333333333333,
+      "scored_case_count": 20
+    }
+  },
+  "top_k": 3
+}

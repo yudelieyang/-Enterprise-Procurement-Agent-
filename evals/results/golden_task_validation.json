@@ -1,0 +1,55 @@
+{
+  "by_required_tool_combination": {
+    "analyze_procurement_data": 6,
+    "analyze_procurement_data + retrieve_procurement_policy + check_policy_compliance": 2,
+    "check_policy_compliance": 7,
+    "none": 2,
+    "query_procurement_database": 7,
+    "retrieve_procurement_policy": 8,
+    "retrieve_procurement_policy + check_policy_compliance": 6
+  },
+  "by_task_type": {
+    "rag_only": 6,
+    "reliability": 6,
+    "sql_analytics": 6,
+    "sql_analytics_rag_compliance": 2,
+    "sql_compliance": 5,
+    "sql_only": 7,
+    "sql_rag_compliance": 6
+  },
+  "case_count": 38,
+  "compliance_statuses": {
+    "FAIL": 6,
+    "PASS": 4,
+    "REVIEW": 4
+  },
+  "portfolio_priority_cases": [
+    "TASK-003",
+    "TASK-008",
+    "TASK-009",
+    "TASK-010",
+    "TASK-013",
+    "TASK-014",
+    "TASK-019",
+    "TASK-020",
+    "TASK-021",
+    "TASK-022",
+    "TASK-025",
+    "TASK-026",
+    "TASK-027",
+    "TASK-028",
+    "TASK-030",
+    "TASK-031",
+    "TASK-032",
+    "TASK-033",
+    "TASK-034",
+    "TASK-035",
+    "TASK-037"
+  ],
+  "response_outcomes": {
+    "ANSWERED": 33,
+    "CLARIFICATION_REQUIRED": 2,
+    "INSUFFICIENT_EVIDENCE": 3
+  },
+  "validation": "passed"
+}

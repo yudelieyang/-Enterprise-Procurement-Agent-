@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "enterprise-procurement-intelligence-agent"
+version = "0.1.0"
+description = "Deterministic synthetic procurement dataset generator"
+requires-python = ">=3.11"
+dependencies = [
+    "SQLAlchemy>=2.0",
+    "pypdf>=5.0",
+    "pgvector>=0.4",
+    "psycopg[binary]>=3.2",
+    "rank-bm25>=0.2.2",
+    "reportlab>=4.0",
+    "sentence-transformers>=5.0",
+    "langgraph>=1.2,<2",
+    "openai>=3.5,<4",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+markers = [
+    "integration: requires a configured PostgreSQL database with the pgvector extension",
+    "live_agent: requires OPENAI_API_KEY and spends API credits",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

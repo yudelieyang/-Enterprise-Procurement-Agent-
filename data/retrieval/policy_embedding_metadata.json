@@ -1,0 +1,12 @@
+{
+  "chunk_count": 30,
+  "chunk_registry_hash": "faed7d6183568d42e56ae7cf5c01d2092da018140d16652a16c0807264fa4a16",
+  "embedding_dimension": 384,
+  "encoding": {
+    "device": "cpu",
+    "normalize_embeddings": true,
+    "similarity": "exact dot product on normalized vectors (cosine equivalent)"
+  },
+  "model_name": "sentence-transformers/multi-qa-MiniLM-L6-cos-v1",
+  "sentence_transformers_version": "6.0.0"
+}

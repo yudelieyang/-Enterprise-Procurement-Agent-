@@ -1,0 +1,1041 @@
+{
+  "status": "completed",
+  "run_kind": "candidate",
+  "generated_at": "2026-09-01T23:32:02.407838+00:00",
+  "prompt_version": "agent_v2",
+  "orchestration_version": "guardrails_v1",
+  "requirements_version": "requirements_v2",
+  "configuration": {
+    "model": "gpt-5.6-luna",
+    "reasoning_effort": "none",
+    "endpoint": "chat.completions.parse",
+    "orchestration_version": "guardrails_v1"
+  },
+  "case_count": 10,
+  "completed_cases": 10,
+  "deterministic_task_checks_passed": 5,
+  "metrics": {
+    "tool_selection_precision": 1.0,
+    "tool_selection_recall": 0.6,
+    "required_tool_coverage": 0.6,
+    "unnecessary_tool_call_rate": 0.0,
+    "trajectory_success_rate": 0.6,
+    "response_outcome_accuracy": 0.5,
+    "citation_correctness": 0.6,
+    "evidence_coverage": 0.6
+  },
+  "usage_totals": {
+    "model_requests": 26,
+    "input_tokens": 46550,
+    "cached_input_tokens": 34325,
+    "output_tokens": 2481,
+    "reasoning_tokens": 0,
+    "total_tokens": 49031
+  },
+  "local_live_smoke_latency_ms": {
+    "mean_ms": 5472.587,
+    "median_ms": 3074.23,
+    "min_ms": 1087.348,
+    "max_ms": 24575.416
+  },
+  "failure_counts": {
+    "CITATION_ERROR": 3,
+    "INCORRECT_RESPONSE_OUTCOME": 1,
+    "LOOP_LIMIT": 1
+  },
+  "records": [
+    {
+      "case_id": "TASK-001",
+      "model": "gpt-5.6-luna",
+      "response_outcome": "ANSWERED",
+      "expected_response_outcome": "ANSWERED",
+      "outcome_match": true,
+      "tool_trajectory": [
+        "query_procurement_database",
+        "query_procurement_database"
+      ],
+      "tool_call_count": 2,
+      "tool_durations_ms": [
+        1.799,
+        1.083
+      ],
+      "model_turn_count": 3,
+      "preflight_model_requests": 1,
+      "preflight_duration_ms": 2777.284,
+      "orchestration_version": "guardrails_v1",
+      "requirements_version": "requirements_v2",
+      "request_requirements": {
+        "decision_definition": "SUFFICIENT",
+        "clarification_question": null,
+        "policy_support_requirement": "NONE"
+      },
+      "guardrail_events": [],
+      "evidence_remediation_count": 0,
+      "tool_evaluation": {
+        "case_id": "TASK-001",
+        "tool_selection_precision": 1.0,
+        "tool_selection_recall": 1.0,
+        "required_tool_coverage": 1.0,
+        "unnecessary_tool_call_rate": 0.0,
+        "trajectory_success": true,
+        "failures": []
+      },
+      "citation_evaluation": {
+        "citation_correctness": 1.0,
+        "evidence_coverage": 1.0,
+        "passed": true,
+        "failures": []
+      },
+      "citation_validation": [],
+      "final_answer_fact_check": "NOT_AUTOMATICALLY_SCORED",
+      "latency_ms": 8563.222,
+      "usage": {
+        "request_count": 4,
+        "preflight_turns": [
+          {
+            "completion_tokens": 29,
+            "prompt_tokens": 303,
+            "total_tokens": 332,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            }
+          }
+        ],
+        "turns": [
+          {
+            "completion_tokens": 112,
+            "prompt_tokens": 1640,
+            "total_tokens": 1752,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cache_write_tokens": 1637,
+              "cached_tokens": 0
+            }
+          },
+          {
+            "completion_tokens": 110,
+            "prompt_tokens": 1913,
+            "total_tokens": 2023,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cache_write_tokens": 273,
+              "cached_tokens": 1637
+            }
+          },
+          {
+            "completion_tokens": 173,
+            "prompt_tokens": 2325,
+            "total_tokens": 2498,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cache_write_tokens": 412,
+              "cached_tokens": 1910
+            }
+          }
+        ]
+      },
+      "termination_reason": null,
+      "failure_category": null,
+      "failure_evidence": []
+    },
+    {
+      "case_id": "TASK-002",
+      "model": "gpt-5.6-luna",
+      "response_outcome": "ANSWERED",
+      "expected_response_outcome": "ANSWERED",
+      "outcome_match": true,
+      "tool_trajectory": [
+        "query_procurement_database"
+      ],
+      "tool_call_count": 1,
+      "tool_durations_ms": [
+        1.262
+      ],
+      "model_turn_count": 2,
+      "preflight_model_requests": 1,
+      "preflight_duration_ms": 996.655,
+      "orchestration_version": "guardrails_v1",
+      "requirements_version": "requirements_v2",
+      "request_requirements": {
+        "decision_definition": "SUFFICIENT",
+        "clarification_question": null,
+        "policy_support_requirement": "NONE"
+      },
+      "guardrail_events": [],
+      "evidence_remediation_count": 0,
+      "tool_evaluation": {
+        "case_id": "TASK-002",
+        "tool_selection_precision": 1.0,
+        "tool_selection_recall": 1.0,
+        "required_tool_coverage": 1.0,
+        "unnecessary_tool_call_rate": 0.0,
+        "trajectory_success": true,
+        "failures": []
+      },
+      "citation_evaluation": {
+        "citation_correctness": 1.0,
+        "evidence_coverage": 1.0,
+        "passed": true,
+        "failures": []
+      },
+      "citation_validation": [],
+      "final_answer_fact_check": "NOT_AUTOMATICALLY_SCORED",
+      "latency_ms": 5428.069,
+      "usage": {
+        "request_count": 3,
+        "preflight_turns": [
+          {
+            "completion_tokens": 29,
+            "prompt_tokens": 305,
+            "total_tokens": 334,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            }
+          }
+        ],
+        "turns": [
+          {
+            "completion_tokens": 135,
+            "prompt_tokens": 1642,
+            "total_tokens": 1777,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cache_write_tokens": 19,
+              "cached_tokens": 1620
+            }
+          },
+          {
+            "completion_tokens": 111,
+            "prompt_tokens": 1982,
+            "total_tokens": 2093,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cache_write_tokens": 340,
+              "cached_tokens": 1639
+            }
+          }
+        ]
+      },
+      "termination_reason": null,
+      "failure_category": null,
+      "failure_evidence": []
+    },
+    {
+      "case_id": "TASK-009",
+      "model": "gpt-5.6-luna",
+      "response_outcome": "CLARIFICATION_REQUIRED",
+      "expected_response_outcome": "ANSWERED",
+      "outcome_match": false,
+      "tool_trajectory": [],
+      "tool_call_count": 0,
+      "tool_durations_ms": [],
+      "model_turn_count": 0,
+      "preflight_model_requests": 1,
+      "preflight_duration_ms": 1087.302,
+      "orchestration_version": "guardrails_v1",
+      "requirements_version": "requirements_v2",
+      "request_requirements": {
+        "decision_definition": "MISSING_REQUIRED_SCOPE",
+        "clarification_question": "Which organization\u2019s procurement policy or approval matrix should I use?",
+        "policy_support_requirement": "EXPLAINABLE_POLICY_EVIDENCE"
+      },
+      "guardrail_events": [],
+      "evidence_remediation_count": 0,
+      "tool_evaluation": {
+        "case_id": "TASK-009",
+        "tool_selection_precision": 1.0,
+        "tool_selection_recall": 0.0,
+        "required_tool_coverage": 0.0,
+        "unnecessary_tool_call_rate": 0.0,
+        "trajectory_success": false,
+        "failures": [
+          "MISSING_REQUIRED_TOOL",
+          "UNACCEPTABLE_TRAJECTORY"
+        ]
+      },
+      "citation_evaluation": {
+        "citation_correctness": 0.0,
+        "evidence_coverage": 0.0,
+        "passed": false,
+        "failures": [
+          "MISSING_EXPECTED_EVIDENCE:APPROVAL_MATRIX_2026_1:Section 4.2"
+        ]
+      },
+      "citation_validation": [],
+      "final_answer_fact_check": "NOT_AUTOMATICALLY_SCORED",
+      "latency_ms": 1087.348,
+      "usage": {
+        "request_count": 1,
+        "preflight_turns": [
+          {
+            "completion_tokens": 48,
+            "prompt_tokens": 303,
+            "total_tokens": 351,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            }
+          }
+        ],
+        "turns": []
+      },
+      "termination_reason": null,
+      "failure_category": "CITATION_ERROR",
+      "failure_evidence": [
+        "MISSING_REQUIRED_TOOL",
+        "UNACCEPTABLE_TRAJECTORY",
+        "MISSING_EXPECTED_EVIDENCE:APPROVAL_MATRIX_2026_1:Section 4.2"
+      ]
+    },
+    {
+      "case_id": "TASK-010",
+      "model": "gpt-5.6-luna",
+      "response_outcome": "CLARIFICATION_REQUIRED",
+      "expected_response_outcome": "ANSWERED",
+      "outcome_match": false,
+      "tool_trajectory": [],
+      "tool_call_count": 0,
+      "tool_durations_ms": [],
+      "model_turn_count": 0,
+      "preflight_model_requests": 1,
+      "preflight_duration_ms": 1711.457,
+      "orchestration_version": "guardrails_v1",
+      "requirements_version": "requirements_v2",
+      "request_requirements": {
+        "decision_definition": "MISSING_REQUIRED_SCOPE",
+        "clarification_question": "Which organization, procurement policy, or entity should I use to determine the 2025 purchase approval threshold?",
+        "policy_support_requirement": "EXPLAINABLE_POLICY_EVIDENCE"
+      },
+      "guardrail_events": [],
+      "evidence_remediation_count": 0,
+      "tool_evaluation": {
+        "case_id": "TASK-010",
+        "tool_selection_precision": 1.0,
+        "tool_selection_recall": 0.0,
+        "required_tool_coverage": 0.0,
+        "unnecessary_tool_call_rate": 0.0,
+        "trajectory_success": false,
+        "failures": [
+          "MISSING_REQUIRED_TOOL",
+          "UNACCEPTABLE_TRAJECTORY"
+        ]
+      },
+      "citation_evaluation": {
+        "citation_correctness": 0.0,
+        "evidence_coverage": 0.0,
+        "passed": false,
+        "failures": [
+          "MISSING_EXPECTED_EVIDENCE:APPROVAL_MATRIX_2025_1:Section 4.2"
+        ]
+      },
+      "citation_validation": [],
+      "final_answer_fact_check": "NOT_AUTOMATICALLY_SCORED",
+      "latency_ms": 1711.499,
+      "usage": {
+        "request_count": 1,
+        "preflight_turns": [
+          {
+            "completion_tokens": 57,
+            "prompt_tokens": 300,
+            "total_tokens": 357,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            }
+          }
+        ],
+        "turns": []
+      },
+      "termination_reason": null,
+      "failure_category": "CITATION_ERROR",
+      "failure_evidence": [
+        "MISSING_REQUIRED_TOOL",
+        "UNACCEPTABLE_TRAJECTORY",
+        "MISSING_EXPECTED_EVIDENCE:APPROVAL_MATRIX_2025_1:Section 4.2"
+      ]
+    },
+    {
+      "case_id": "TASK-014",
+      "model": "gpt-5.6-luna",
+      "response_outcome": "ANSWERED",
+      "expected_response_outcome": "ANSWERED",
+      "outcome_match": true,
+      "tool_trajectory": [
+        "analyze_procurement_data"
+      ],
+      "tool_call_count": 1,
+      "tool_durations_ms": [
+        6.389
+      ],
+      "model_turn_count": 2,
+      "preflight_model_requests": 1,
+      "preflight_duration_ms": 989.191,
+      "orchestration_version": "guardrails_v1",
+      "requirements_version": "requirements_v2",
+      "request_requirements": {
+        "decision_definition": "SUFFICIENT",
+        "clarification_question": null,
+        "policy_support_requirement": "NONE"
+      },
+      "guardrail_events": [],
+      "evidence_remediation_count": 0,
+      "tool_evaluation": {
+        "case_id": "TASK-014",
+        "tool_selection_precision": 1.0,
+        "tool_selection_recall": 1.0,
+        "required_tool_coverage": 1.0,
+        "unnecessary_tool_call_rate": 0.0,
+        "trajectory_success": true,
+        "failures": []
+      },
+      "citation_evaluation": {
+        "citation_correctness": 1.0,
+        "evidence_coverage": 1.0,
+        "passed": true,
+        "failures": []
+      },
+      "citation_validation": [],
+      "final_answer_fact_check": "NOT_AUTOMATICALLY_SCORED",
+      "latency_ms": 5084.186,
+      "usage": {
+        "request_count": 3,
+        "preflight_turns": [
+          {
+            "completion_tokens": 29,
+            "prompt_tokens": 322,
+            "total_tokens": 351,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            }
+          }
+        ],
+        "turns": [
+          {
+            "completion_tokens": 97,
+            "prompt_tokens": 1659,
+            "total_tokens": 1756,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cache_write_tokens": 36,
+              "cached_tokens": 1620
+            }
+          },
+          {
+            "completion_tokens": 232,
+            "prompt_tokens": 2335,
+            "total_tokens": 2567,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cache_write_tokens": 676,
+              "cached_tokens": 1656
+            }
+          }
+        ]
+      },
+      "termination_reason": null,
+      "failure_category": null,
+      "failure_evidence": []
+    },
+    {
+      "case_id": "TASK-020",
+      "model": "gpt-5.6-luna",
+      "response_outcome": "ANSWERED",
+      "expected_response_outcome": "ANSWERED",
+      "outcome_match": true,
+      "tool_trajectory": [
+        "check_policy_compliance"
+      ],
+      "tool_call_count": 1,
+      "tool_durations_ms": [
+        6.479
+      ],
+      "model_turn_count": 2,
+      "preflight_model_requests": 1,
+      "preflight_duration_ms": 1124.113,
+      "orchestration_version": "guardrails_v1",
+      "requirements_version": "requirements_v2",
+      "request_requirements": {
+        "decision_definition": "SUFFICIENT",
+        "clarification_question": null,
+        "policy_support_requirement": "STATUS_ONLY"
+      },
+      "guardrail_events": [],
+      "evidence_remediation_count": 0,
+      "tool_evaluation": {
+        "case_id": "TASK-020",
+        "tool_selection_precision": 1.0,
+        "tool_selection_recall": 1.0,
+        "required_tool_coverage": 1.0,
+        "unnecessary_tool_call_rate": 0.0,
+        "trajectory_success": true,
+        "failures": []
+      },
+      "citation_evaluation": {
+        "citation_correctness": 1.0,
+        "evidence_coverage": 1.0,
+        "passed": true,
+        "failures": []
+      },
+      "citation_validation": [],
+      "final_answer_fact_check": "NOT_AUTOMATICALLY_SCORED",
+      "latency_ms": 4436.961,
+      "usage": {
+        "request_count": 3,
+        "preflight_turns": [
+          {
+            "completion_tokens": 30,
+            "prompt_tokens": 303,
+            "total_tokens": 333,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            }
+          }
+        ],
+        "turns": [
+          {
+            "completion_tokens": 26,
+            "prompt_tokens": 1640,
+            "total_tokens": 1666,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cache_write_tokens": 17,
+              "cached_tokens": 1620
+            }
+          },
+          {
+            "completion_tokens": 154,
+            "prompt_tokens": 2288,
+            "total_tokens": 2442,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cache_write_tokens": 648,
+              "cached_tokens": 1637
+            }
+          }
+        ]
+      },
+      "termination_reason": null,
+      "failure_category": null,
+      "failure_evidence": []
+    },
+    {
+      "case_id": "TASK-025",
+      "model": "gpt-5.6-luna",
+      "response_outcome": "CLARIFICATION_REQUIRED",
+      "expected_response_outcome": "ANSWERED",
+      "outcome_match": false,
+      "tool_trajectory": [],
+      "tool_call_count": 0,
+      "tool_durations_ms": [],
+      "model_turn_count": 0,
+      "preflight_model_requests": 1,
+      "preflight_duration_ms": 1101.847,
+      "orchestration_version": "guardrails_v1",
+      "requirements_version": "requirements_v2",
+      "request_requirements": {
+        "decision_definition": "MISSING_REQUIRED_SCOPE",
+        "clarification_question": "Which procurement policy or compliance criteria should be used to evaluate PO-2026-1842?",
+        "policy_support_requirement": "EXPLAINABLE_POLICY_EVIDENCE"
+      },
+      "guardrail_events": [],
+      "evidence_remediation_count": 0,
+      "tool_evaluation": {
+        "case_id": "TASK-025",
+        "tool_selection_precision": 1.0,
+        "tool_selection_recall": 0.0,
+        "required_tool_coverage": 0.0,
+        "unnecessary_tool_call_rate": 0.0,
+        "trajectory_success": false,
+        "failures": [
+          "MISSING_REQUIRED_TOOL",
+          "UNACCEPTABLE_TRAJECTORY"
+        ]
+      },
+      "citation_evaluation": {
+        "citation_correctness": 0.0,
+        "evidence_coverage": 0.0,
+        "passed": false,
+        "failures": [
+          "MISSING_EXPECTED_EVIDENCE:APPROVAL_MATRIX_2026_1:Section 4.2",
+          "MISSING_EXPECTED_EVIDENCE:CONTRACT_COMPLIANCE_2026_1:Section 4.1",
+          "INSUFFICIENT_CITATION_DIVERSITY"
+        ]
+      },
+      "citation_validation": [],
+      "final_answer_fact_check": "NOT_AUTOMATICALLY_SCORED",
+      "latency_ms": 1101.986,
+      "usage": {
+        "request_count": 1,
+        "preflight_turns": [
+          {
+            "completion_tokens": 55,
+            "prompt_tokens": 303,
+            "total_tokens": 358,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            }
+          }
+        ],
+        "turns": []
+      },
+      "termination_reason": null,
+      "failure_category": "CITATION_ERROR",
+      "failure_evidence": [
+        "MISSING_REQUIRED_TOOL",
+        "UNACCEPTABLE_TRAJECTORY",
+        "MISSING_EXPECTED_EVIDENCE:APPROVAL_MATRIX_2026_1:Section 4.2",
+        "MISSING_EXPECTED_EVIDENCE:CONTRACT_COMPLIANCE_2026_1:Section 4.1",
+        "INSUFFICIENT_CITATION_DIVERSITY"
+      ]
+    },
+    {
+      "case_id": "TASK-033",
+      "model": "gpt-5.6-luna",
+      "response_outcome": "CLARIFICATION_REQUIRED",
+      "expected_response_outcome": "CLARIFICATION_REQUIRED",
+      "outcome_match": true,
+      "tool_trajectory": [],
+      "tool_call_count": 0,
+      "tool_durations_ms": [],
+      "model_turn_count": 0,
+      "preflight_model_requests": 1,
+      "preflight_duration_ms": 1358.443,
+      "orchestration_version": "guardrails_v1",
+      "requirements_version": "requirements_v2",
+      "request_requirements": {
+        "decision_definition": "MISSING_REQUIRED_CRITERIA",
+        "clarification_question": "What criteria should define \u201cpreferred supplier\u201d (for example, an approved supplier-list designation, contract status, or performance threshold)?",
+        "policy_support_requirement": "NONE"
+      },
+      "guardrail_events": [],
+      "evidence_remediation_count": 0,
+      "tool_evaluation": {
+        "case_id": "TASK-033",
+        "tool_selection_precision": 1.0,
+        "tool_selection_recall": 1.0,
+        "required_tool_coverage": 1.0,
+        "unnecessary_tool_call_rate": 0.0,
+        "trajectory_success": true,
+        "failures": []
+      },
+      "citation_evaluation": {
+        "citation_correctness": 1.0,
+        "evidence_coverage": 1.0,
+        "passed": true,
+        "failures": []
+      },
+      "citation_validation": [],
+      "final_answer_fact_check": "NOT_AUTOMATICALLY_SCORED",
+      "latency_ms": 1358.483,
+      "usage": {
+        "request_count": 1,
+        "preflight_turns": [
+          {
+            "completion_tokens": 56,
+            "prompt_tokens": 297,
+            "total_tokens": 353,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            }
+          }
+        ],
+        "turns": []
+      },
+      "termination_reason": null,
+      "failure_category": null,
+      "failure_evidence": []
+    },
+    {
+      "case_id": "TASK-035",
+      "model": "gpt-5.6-luna",
+      "response_outcome": "CLARIFICATION_REQUIRED",
+      "expected_response_outcome": "INSUFFICIENT_EVIDENCE",
+      "outcome_match": false,
+      "tool_trajectory": [],
+      "tool_call_count": 0,
+      "tool_durations_ms": [],
+      "model_turn_count": 0,
+      "preflight_model_requests": 1,
+      "preflight_duration_ms": 1378.656,
+      "orchestration_version": "guardrails_v1",
+      "requirements_version": "requirements_v2",
+      "request_requirements": {
+        "decision_definition": "MISSING_REQUIRED_SCOPE",
+        "clarification_question": "Which 2024 contract policy (organization or policy title) do you mean, and what aspect of its requirements should I summarize?",
+        "policy_support_requirement": "EXPLAINABLE_POLICY_EVIDENCE"
+      },
+      "guardrail_events": [],
+      "evidence_remediation_count": 0,
+      "tool_evaluation": {
+        "case_id": "TASK-035",
+        "tool_selection_precision": 1.0,
+        "tool_selection_recall": 0.0,
+        "required_tool_coverage": 0.0,
+        "unnecessary_tool_call_rate": 0.0,
+        "trajectory_success": false,
+        "failures": [
+          "MISSING_REQUIRED_TOOL",
+          "UNACCEPTABLE_TRAJECTORY"
+        ]
+      },
+      "citation_evaluation": {
+        "citation_correctness": 1.0,
+        "evidence_coverage": 1.0,
+        "passed": true,
+        "failures": []
+      },
+      "citation_validation": [],
+      "final_answer_fact_check": "NOT_AUTOMATICALLY_SCORED",
+      "latency_ms": 1378.696,
+      "usage": {
+        "request_count": 1,
+        "preflight_turns": [
+          {
+            "completion_tokens": 62,
+            "prompt_tokens": 300,
+            "total_tokens": 362,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            }
+          }
+        ],
+        "turns": []
+      },
+      "termination_reason": null,
+      "failure_category": "INCORRECT_RESPONSE_OUTCOME",
+      "failure_evidence": [
+        "MISSING_REQUIRED_TOOL",
+        "UNACCEPTABLE_TRAJECTORY"
+      ]
+    },
+    {
+      "case_id": "TASK-030",
+      "model": "gpt-5.6-luna",
+      "response_outcome": "INSUFFICIENT_EVIDENCE",
+      "expected_response_outcome": "ANSWERED",
+      "outcome_match": false,
+      "tool_trajectory": [
+        "analyze_procurement_data",
+        "check_policy_compliance",
+        "check_policy_compliance",
+        "check_policy_compliance",
+        "retrieve_procurement_policy",
+        "retrieve_procurement_policy"
+      ],
+      "tool_call_count": 6,
+      "tool_durations_ms": [
+        1.718,
+        2.065,
+        1.639,
+        1.717,
+        10064.968,
+        15.186
+      ],
+      "model_turn_count": 7,
+      "preflight_model_requests": 1,
+      "preflight_duration_ms": 997.344,
+      "orchestration_version": "guardrails_v1",
+      "requirements_version": "requirements_v2",
+      "request_requirements": {
+        "decision_definition": "SUFFICIENT",
+        "clarification_question": null,
+        "policy_support_requirement": "EXPLAINABLE_POLICY_EVIDENCE"
+      },
+      "guardrail_events": [
+        {
+          "event_type": "EVIDENCE_COMPLETENESS_GUARD",
+          "triggered": true,
+          "remediation_attempt": 1,
+          "reason_code": "MISSING_REQUIRED_POLICY_EVIDENCE"
+        }
+      ],
+      "evidence_remediation_count": 1,
+      "tool_evaluation": {
+        "case_id": "TASK-030",
+        "tool_selection_precision": 1.0,
+        "tool_selection_recall": 1.0,
+        "required_tool_coverage": 1.0,
+        "unnecessary_tool_call_rate": 0.0,
+        "trajectory_success": true,
+        "failures": []
+      },
+      "citation_evaluation": {
+        "citation_correctness": 0.0,
+        "evidence_coverage": 0.0,
+        "passed": false,
+        "failures": [
+          "MISSING_EXPECTED_EVIDENCE:APPROVAL_MATRIX_2026_1:Section 4.2",
+          "MISSING_EXPECTED_EVIDENCE:CONTRACT_COMPLIANCE_2026_1:Section 4.1"
+        ]
+      },
+      "citation_validation": [],
+      "final_answer_fact_check": "NOT_AUTOMATICALLY_SCORED",
+      "latency_ms": 24575.416,
+      "usage": {
+        "request_count": 8,
+        "preflight_turns": [
+          {
+            "completion_tokens": 36,
+            "prompt_tokens": 351,
+            "total_tokens": 387,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            }
+          }
+        ],
+        "turns": [
+          {
+            "completion_tokens": 97,
+            "prompt_tokens": 1688,
+            "total_tokens": 1785,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cache_write_tokens": 65,
+              "cached_tokens": 1620
+            }
+          },
+          {
+            "completion_tokens": 26,
+            "prompt_tokens": 2364,
+            "total_tokens": 2390,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cache_write_tokens": 676,
+              "cached_tokens": 1685
+            }
+          },
+          {
+            "completion_tokens": 26,
+            "prompt_tokens": 3016,
+            "total_tokens": 3042,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cache_write_tokens": 652,
+              "cached_tokens": 2361
+            }
+          },
+          {
+            "completion_tokens": 26,
+            "prompt_tokens": 3676,
+            "total_tokens": 3702,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cache_write_tokens": 660,
+              "cached_tokens": 3013
+            }
+          },
+          {
+            "completion_tokens": 555,
+            "prompt_tokens": 4320,
+            "total_tokens": 4875,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cache_write_tokens": 644,
+              "cached_tokens": 3673
+            }
+          },
+          {
+            "completion_tokens": 100,
+            "prompt_tokens": 4922,
+            "total_tokens": 5022,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cache_write_tokens": 0,
+              "cached_tokens": 4317
+            }
+          },
+          {
+            "completion_tokens": 70,
+            "prompt_tokens": 6053,
+            "total_tokens": 6123,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cache_write_tokens": 1733,
+              "cached_tokens": 4317
+            }
+          }
+        ]
+      },
+      "termination_reason": "MODEL_TURN_LIMIT",
+      "failure_category": "LOOP_LIMIT",
+      "failure_evidence": [
+        "MISSING_EXPECTED_EVIDENCE:APPROVAL_MATRIX_2026_1:Section 4.2",
+        "MISSING_EXPECTED_EVIDENCE:CONTRACT_COMPLIANCE_2026_1:Section 4.1"
+      ]
+    }
+  ]
+}

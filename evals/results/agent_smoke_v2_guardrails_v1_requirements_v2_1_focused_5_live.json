@@ -1,0 +1,805 @@
+{
+  "case_count": 5,
+  "case_ids": [
+    "TASK-009",
+    "TASK-010",
+    "TASK-025",
+    "TASK-035",
+    "TASK-033"
+  ],
+  "configuration": {
+    "endpoint": "chat.completions.parse",
+    "max_model_turns": 7,
+    "model": "gpt-5.6-luna",
+    "reasoning_effort": "none"
+  },
+  "downstream_metrics": {
+    "citation_correctness": 1.0,
+    "deterministic_case_pass_count": 3,
+    "evidence_coverage": 1.0,
+    "required_tool_coverage": 1.0,
+    "sufficient_case_count": 3,
+    "tool_selection_precision": 1.0,
+    "tool_selection_recall": 1.0,
+    "trajectory_success_rate": 1
+  },
+  "generated_at": "2026-09-10T14:43:10.980789+00:00",
+  "orchestration_version": "guardrails_v1",
+  "prompt_version": "agent_v2",
+  "records": [
+    {
+      "case_id": "TASK-009",
+      "citation_evaluation": {
+        "citation_correctness": 1.0,
+        "evidence_coverage": 1.0,
+        "failures": [],
+        "passed": true
+      },
+      "citation_validation": [
+        {
+          "model_citation": {
+            "chunk_id": "APPROVAL_MATRIX_2026_1:2026.1:p2:s4_2:c1",
+            "document_id": "APPROVAL_MATRIX_2026_1",
+            "page": 2,
+            "section": "Section 4.2",
+            "title": "Approval Authority Matrix",
+            "version": "2026.1"
+          },
+          "outcome": "MATERIALIZED_FROM_CHUNK_ID",
+          "reason": "CHUNK_ID_FOUND_IN_RUN_EVIDENCE"
+        },
+        {
+          "model_citation": {
+            "chunk_id": "APPROVAL_MATRIX_2026_1:2026.1:p1:s2:c1",
+            "document_id": "APPROVAL_MATRIX_2026_1",
+            "page": 1,
+            "section": "Section 2",
+            "title": "Approval Authority Matrix",
+            "version": "2026.1"
+          },
+          "outcome": "MATERIALIZED_FROM_CHUNK_ID",
+          "reason": "CHUNK_ID_FOUND_IN_RUN_EVIDENCE"
+        }
+      ],
+      "deterministic_case_pass": true,
+      "evidence_references": [
+        {
+          "chunk_id": "APPROVAL_MATRIX_2026_1:2026.1:p2:s4_2:c1",
+          "document_id": "APPROVAL_MATRIX_2026_1",
+          "page": 2,
+          "section": "Section 4.2",
+          "source": "retrieval",
+          "title": "Approval Authority Matrix",
+          "tool_call_id": "c2210633-68de-4df5-bae3-cff1529f0324",
+          "version": "2026.1"
+        },
+        {
+          "chunk_id": "CORP_PROCUREMENT_2026_1:2026.1:p2:s2:c1",
+          "document_id": "CORP_PROCUREMENT_2026_1",
+          "page": 2,
+          "section": "Section 2",
+          "source": "retrieval",
+          "title": "Corporate Procurement Policy",
+          "tool_call_id": "c2210633-68de-4df5-bae3-cff1529f0324",
+          "version": "2026.1"
+        },
+        {
+          "chunk_id": "CORP_PROCUREMENT_2026_1:2026.1:p1:s1:c1",
+          "document_id": "CORP_PROCUREMENT_2026_1",
+          "page": 1,
+          "section": "Section 1",
+          "source": "retrieval",
+          "title": "Corporate Procurement Policy",
+          "tool_call_id": "c2210633-68de-4df5-bae3-cff1529f0324",
+          "version": "2026.1"
+        },
+        {
+          "chunk_id": "APPROVAL_MATRIX_2026_1:2026.1:p1:s2:c1",
+          "document_id": "APPROVAL_MATRIX_2026_1",
+          "page": 1,
+          "section": "Section 2",
+          "source": "retrieval",
+          "title": "Approval Authority Matrix",
+          "tool_call_id": "c2210633-68de-4df5-bae3-cff1529f0324",
+          "version": "2026.1"
+        },
+        {
+          "chunk_id": "APPROVAL_MATRIX_2026_1:2026.1:p3:s5:c1",
+          "document_id": "APPROVAL_MATRIX_2026_1",
+          "page": 3,
+          "section": "Section 5",
+          "source": "retrieval",
+          "title": "Approval Authority Matrix",
+          "tool_call_id": "c2210633-68de-4df5-bae3-cff1529f0324",
+          "version": "2026.1"
+        }
+      ],
+      "evidence_remediation_count": 0,
+      "expected_requirements": {
+        "decision_definition": "SUFFICIENT",
+        "policy_support_requirement": "EXPLAINABLE_POLICY_EVIDENCE"
+      },
+      "expected_response_outcome": "ANSWERED",
+      "guardrail_events": [],
+      "model": "gpt-5.6-luna",
+      "model_turn_count": 2,
+      "notes": [],
+      "preflight_model_requests": 1,
+      "requirements": {
+        "clarification_question": null,
+        "decision_definition": "SUFFICIENT",
+        "policy_support_requirement": "EXPLAINABLE_POLICY_EVIDENCE"
+      },
+      "requirements_decision_match": true,
+      "requirements_policy_support_match": true,
+      "response_outcome": "ANSWERED",
+      "response_outcome_match": true,
+      "termination_reason": null,
+      "tool_call_records": [
+        {
+          "arguments": {
+            "query": "required approvals for purchases above $50,000 approval thresholds procurement",
+            "retrieval_mode": "hybrid",
+            "target_date": "2026-06-30",
+            "top_k": 5
+          },
+          "call_id": "c2210633-68de-4df5-bae3-cff1529f0324",
+          "duration_ms": 9154.953,
+          "ended_at": "2026-09-10T14:42:48.047561+00:00",
+          "error": null,
+          "result_summary": {
+            "result_type": "PolicyRetrievalToolResult"
+          },
+          "started_at": "2026-09-10T14:42:38.892642+00:00",
+          "success": true,
+          "tool_name": "retrieve_procurement_policy"
+        }
+      ],
+      "tool_evaluation": {
+        "case_id": "TASK-009",
+        "failures": [],
+        "required_tool_coverage": 1.0,
+        "tool_selection_precision": 1.0,
+        "tool_selection_recall": 1.0,
+        "trajectory_success": true,
+        "unnecessary_tool_call_rate": 0.0
+      },
+      "tool_trajectory": [
+        "retrieve_procurement_policy"
+      ],
+      "usage": {
+        "preflight_turns": [
+          {
+            "completion_tokens": 36,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens": 460,
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "total_tokens": 496
+          }
+        ],
+        "request_count": 3,
+        "turns": [
+          {
+            "completion_tokens": 52,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens": 1640,
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cache_write_tokens": 1637,
+              "cached_tokens": 0
+            },
+            "total_tokens": 1692
+          },
+          {
+            "completion_tokens": 321,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens": 2946,
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cache_write_tokens": 1306,
+              "cached_tokens": 1637
+            },
+            "total_tokens": 3267
+          }
+        ]
+      },
+      "user_query": "What approvals are required for a purchase above $50,000?"
+    },
+    {
+      "case_id": "TASK-010",
+      "citation_evaluation": {
+        "citation_correctness": 1.0,
+        "evidence_coverage": 1.0,
+        "failures": [],
+        "passed": true
+      },
+      "citation_validation": [
+        {
+          "model_citation": {
+            "chunk_id": "APPROVAL_MATRIX_2025_1:2025.1:p2:s4_2:c1",
+            "document_id": "APPROVAL_MATRIX_2025_1",
+            "page": 2,
+            "section": "Section 4.2",
+            "title": "Approval Authority Matrix",
+            "version": "2025.1"
+          },
+          "outcome": "MATERIALIZED_FROM_CHUNK_ID",
+          "reason": "CHUNK_ID_FOUND_IN_RUN_EVIDENCE"
+        }
+      ],
+      "deterministic_case_pass": true,
+      "evidence_references": [
+        {
+          "chunk_id": "APPROVAL_MATRIX_2025_1:2025.1:p2:s4_2:c1",
+          "document_id": "APPROVAL_MATRIX_2025_1",
+          "page": 2,
+          "section": "Section 4.2",
+          "source": "retrieval",
+          "title": "Approval Authority Matrix",
+          "tool_call_id": "4c313f80-0537-4ee9-9b90-82c678d86d89",
+          "version": "2025.1"
+        },
+        {
+          "chunk_id": "CORP_PROCUREMENT_2025_1:2025.1:p2:s2:c1",
+          "document_id": "CORP_PROCUREMENT_2025_1",
+          "page": 2,
+          "section": "Section 2",
+          "source": "retrieval",
+          "title": "Corporate Procurement Policy",
+          "tool_call_id": "4c313f80-0537-4ee9-9b90-82c678d86d89",
+          "version": "2025.1"
+        },
+        {
+          "chunk_id": "CORP_PROCUREMENT_2025_1:2025.1:p3:s5:c1",
+          "document_id": "CORP_PROCUREMENT_2025_1",
+          "page": 3,
+          "section": "Section 5",
+          "source": "retrieval",
+          "title": "Corporate Procurement Policy",
+          "tool_call_id": "4c313f80-0537-4ee9-9b90-82c678d86d89",
+          "version": "2025.1"
+        },
+        {
+          "chunk_id": "APPROVAL_MATRIX_2025_1:2025.1:p3:s5:c1",
+          "document_id": "APPROVAL_MATRIX_2025_1",
+          "page": 3,
+          "section": "Section 5",
+          "source": "retrieval",
+          "title": "Approval Authority Matrix",
+          "tool_call_id": "4c313f80-0537-4ee9-9b90-82c678d86d89",
+          "version": "2025.1"
+        },
+        {
+          "chunk_id": "CORP_PROCUREMENT_2025_1:2025.1:p1:s1:c1",
+          "document_id": "CORP_PROCUREMENT_2025_1",
+          "page": 1,
+          "section": "Section 1",
+          "source": "retrieval",
+          "title": "Corporate Procurement Policy",
+          "tool_call_id": "4c313f80-0537-4ee9-9b90-82c678d86d89",
+          "version": "2025.1"
+        }
+      ],
+      "evidence_remediation_count": 0,
+      "expected_requirements": {
+        "decision_definition": "SUFFICIENT",
+        "policy_support_requirement": "EXPLAINABLE_POLICY_EVIDENCE"
+      },
+      "expected_response_outcome": "ANSWERED",
+      "guardrail_events": [],
+      "model": "gpt-5.6-luna",
+      "model_turn_count": 2,
+      "notes": [],
+      "preflight_model_requests": 1,
+      "requirements": {
+        "clarification_question": null,
+        "decision_definition": "SUFFICIENT",
+        "policy_support_requirement": "EXPLAINABLE_POLICY_EVIDENCE"
+      },
+      "requirements_decision_match": true,
+      "requirements_policy_support_match": true,
+      "response_outcome": "ANSWERED",
+      "response_outcome_match": true,
+      "termination_reason": null,
+      "tool_call_records": [
+        {
+          "arguments": {
+            "query": "purchase approval threshold applicable in 2025 procurement approvals threshold",
+            "retrieval_mode": "hybrid",
+            "target_date": "2025-12-31",
+            "top_k": 5
+          },
+          "call_id": "4c313f80-0537-4ee9-9b90-82c678d86d89",
+          "duration_ms": 11.73,
+          "ended_at": "2026-09-10T14:42:55.763012+00:00",
+          "error": null,
+          "result_summary": {
+            "result_type": "PolicyRetrievalToolResult"
+          },
+          "started_at": "2026-09-10T14:42:55.751305+00:00",
+          "success": true,
+          "tool_name": "retrieve_procurement_policy"
+        }
+      ],
+      "tool_evaluation": {
+        "case_id": "TASK-010",
+        "failures": [],
+        "required_tool_coverage": 1.0,
+        "tool_selection_precision": 1.0,
+        "tool_selection_recall": 1.0,
+        "trajectory_success": true,
+        "unnecessary_tool_call_rate": 0.0
+      },
+      "tool_trajectory": [
+        "retrieve_procurement_policy"
+      ],
+      "usage": {
+        "preflight_turns": [
+          {
+            "completion_tokens": 36,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens": 457,
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "total_tokens": 493
+          }
+        ],
+        "request_count": 3,
+        "turns": [
+          {
+            "completion_tokens": 51,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens": 1637,
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cache_write_tokens": 14,
+              "cached_tokens": 1620
+            },
+            "total_tokens": 1688
+          },
+          {
+            "completion_tokens": 201,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens": 2969,
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cache_write_tokens": 1332,
+              "cached_tokens": 1634
+            },
+            "total_tokens": 3170
+          }
+        ]
+      },
+      "user_query": "What purchase approval threshold applied in 2025?"
+    },
+    {
+      "case_id": "TASK-025",
+      "citation_evaluation": {
+        "citation_correctness": 1.0,
+        "evidence_coverage": 1.0,
+        "failures": [],
+        "passed": true
+      },
+      "citation_validation": [
+        {
+          "model_citation": {
+            "chunk_id": "APPROVAL_MATRIX_2026_1:2026.1:p2:s4_2:c1",
+            "document_id": null,
+            "page": null,
+            "section": null,
+            "title": null,
+            "version": null
+          },
+          "outcome": "MATERIALIZED_FROM_CHUNK_ID",
+          "reason": "CHUNK_ID_FOUND_IN_RUN_EVIDENCE"
+        },
+        {
+          "model_citation": {
+            "chunk_id": "CONTRACT_COMPLIANCE_2026_1:2026.1:p2:s4_1:c1",
+            "document_id": null,
+            "page": null,
+            "section": null,
+            "title": null,
+            "version": null
+          },
+          "outcome": "MATERIALIZED_FROM_CHUNK_ID",
+          "reason": "CHUNK_ID_FOUND_IN_RUN_EVIDENCE"
+        }
+      ],
+      "deterministic_case_pass": true,
+      "evidence_references": [
+        {
+          "chunk_id": null,
+          "document_id": "APPROVAL_MATRIX_2026_1",
+          "page": 2,
+          "section": "Section 4.2",
+          "source": "compliance",
+          "title": "Approval Authority Matrix",
+          "tool_call_id": "1d89bf79-16e2-4367-80a7-65373dfaa3cd",
+          "version": "2026.1"
+        },
+        {
+          "chunk_id": null,
+          "document_id": "CONTRACT_COMPLIANCE_2026_1",
+          "page": 2,
+          "section": "Section 4.1",
+          "source": "compliance",
+          "title": "Contract Compliance Policy",
+          "tool_call_id": "1d89bf79-16e2-4367-80a7-65373dfaa3cd",
+          "version": "2026.1"
+        },
+        {
+          "chunk_id": "APPROVAL_MATRIX_2026_1:2026.1:p2:s4_2:c1",
+          "document_id": "APPROVAL_MATRIX_2026_1",
+          "page": 2,
+          "section": "Section 4.2",
+          "source": "retrieval",
+          "title": "Approval Authority Matrix",
+          "tool_call_id": "b1a76adb-294f-4a81-8da5-b2c9019b8996",
+          "version": "2026.1"
+        },
+        {
+          "chunk_id": "CONTRACT_COMPLIANCE_2026_1:2026.1:p2:s4_1:c1",
+          "document_id": "CONTRACT_COMPLIANCE_2026_1",
+          "page": 2,
+          "section": "Section 4.1",
+          "source": "retrieval",
+          "title": "Contract Compliance Policy",
+          "tool_call_id": "b1a76adb-294f-4a81-8da5-b2c9019b8996",
+          "version": "2026.1"
+        },
+        {
+          "chunk_id": "CONTRACT_COMPLIANCE_2026_1:2026.1:p1:s1:c1",
+          "document_id": "CONTRACT_COMPLIANCE_2026_1",
+          "page": 1,
+          "section": "Section 1",
+          "source": "retrieval",
+          "title": "Contract Compliance Policy",
+          "tool_call_id": "b1a76adb-294f-4a81-8da5-b2c9019b8996",
+          "version": "2026.1"
+        }
+      ],
+      "evidence_remediation_count": 0,
+      "expected_requirements": {
+        "decision_definition": "SUFFICIENT",
+        "policy_support_requirement": "EXPLAINABLE_POLICY_EVIDENCE"
+      },
+      "expected_response_outcome": "ANSWERED",
+      "guardrail_events": [],
+      "model": "gpt-5.6-luna",
+      "model_turn_count": 3,
+      "notes": [],
+      "preflight_model_requests": 1,
+      "requirements": {
+        "clarification_question": null,
+        "decision_definition": "SUFFICIENT",
+        "policy_support_requirement": "EXPLAINABLE_POLICY_EVIDENCE"
+      },
+      "requirements_decision_match": true,
+      "requirements_policy_support_match": true,
+      "response_outcome": "ANSWERED",
+      "response_outcome_match": true,
+      "termination_reason": null,
+      "tool_call_records": [
+        {
+          "arguments": {
+            "po_number": "PO-2026-1842"
+          },
+          "call_id": "1d89bf79-16e2-4367-80a7-65373dfaa3cd",
+          "duration_ms": 9.643,
+          "ended_at": "2026-09-10T14:43:02.507511+00:00",
+          "error": null,
+          "result_summary": {
+            "result_type": "ComplianceResult"
+          },
+          "started_at": "2026-09-10T14:43:02.497891+00:00",
+          "success": true,
+          "tool_name": "check_policy_compliance"
+        },
+        {
+          "arguments": {
+            "query": "PO-2026-1842 applicable approval and contract compliance requirements: purchases over $50,000 require two distinct purchase approvals and director approval; contract-required categories including IT Services",
+            "retrieval_mode": "hybrid",
+            "target_date": "2026-01-16",
+            "top_k": 3
+          },
+          "call_id": "b1a76adb-294f-4a81-8da5-b2c9019b8996",
+          "duration_ms": 13.213,
+          "ended_at": "2026-09-10T14:43:04.201661+00:00",
+          "error": null,
+          "result_summary": {
+            "result_type": "PolicyRetrievalToolResult"
+          },
+          "started_at": "2026-09-10T14:43:04.188470+00:00",
+          "success": true,
+          "tool_name": "retrieve_procurement_policy"
+        }
+      ],
+      "tool_evaluation": {
+        "case_id": "TASK-025",
+        "failures": [],
+        "required_tool_coverage": 1.0,
+        "tool_selection_precision": 1.0,
+        "tool_selection_recall": 1.0,
+        "trajectory_success": true,
+        "unnecessary_tool_call_rate": 0.0
+      },
+      "tool_trajectory": [
+        "check_policy_compliance",
+        "retrieve_procurement_policy"
+      ],
+      "usage": {
+        "preflight_turns": [
+          {
+            "completion_tokens": 36,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens": 460,
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "total_tokens": 496
+          }
+        ],
+        "request_count": 4,
+        "turns": [
+          {
+            "completion_tokens": 26,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens": 1640,
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cache_write_tokens": 17,
+              "cached_tokens": 1620
+            },
+            "total_tokens": 1666
+          },
+          {
+            "completion_tokens": 75,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens": 2300,
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cache_write_tokens": 660,
+              "cached_tokens": 1637
+            },
+            "total_tokens": 2375
+          },
+          {
+            "completion_tokens": 304,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens": 3236,
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cache_write_tokens": 936,
+              "cached_tokens": 2297
+            },
+            "total_tokens": 3540
+          }
+        ]
+      },
+      "user_query": "Is PO-2026-1842 compliant with procurement policy?"
+    },
+    {
+      "case_id": "TASK-035",
+      "citation_evaluation": {
+        "citation_correctness": 1.0,
+        "evidence_coverage": 1.0,
+        "failures": [],
+        "passed": true
+      },
+      "citation_validation": [],
+      "deterministic_case_pass": false,
+      "evidence_references": [],
+      "evidence_remediation_count": 0,
+      "expected_requirements": {
+        "decision_definition": "SUFFICIENT",
+        "policy_support_requirement": "EXPLAINABLE_POLICY_EVIDENCE"
+      },
+      "expected_response_outcome": "INSUFFICIENT_EVIDENCE",
+      "guardrail_events": [],
+      "model": "gpt-5.6-luna",
+      "model_turn_count": 0,
+      "notes": [
+        "requirements_decision_mismatch",
+        "response_outcome_mismatch",
+        "tool_evaluation_failure"
+      ],
+      "preflight_model_requests": 1,
+      "requirements": {
+        "clarification_question": "Which organization or jurisdiction\u2019s 2024 contract policy are you referring to?",
+        "decision_definition": "MISSING_REQUIRED_SCOPE",
+        "policy_support_requirement": "EXPLAINABLE_POLICY_EVIDENCE"
+      },
+      "requirements_decision_match": false,
+      "requirements_policy_support_match": true,
+      "response_outcome": "CLARIFICATION_REQUIRED",
+      "response_outcome_match": false,
+      "termination_reason": null,
+      "tool_call_records": [],
+      "tool_evaluation": {
+        "case_id": "TASK-035",
+        "failures": [
+          "MISSING_REQUIRED_TOOL",
+          "UNACCEPTABLE_TRAJECTORY"
+        ],
+        "required_tool_coverage": 0.0,
+        "tool_selection_precision": 1.0,
+        "tool_selection_recall": 0.0,
+        "trajectory_success": false,
+        "unnecessary_tool_call_rate": 0.0
+      },
+      "tool_trajectory": [],
+      "usage": {
+        "preflight_turns": [
+          {
+            "completion_tokens": 51,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens": 457,
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "total_tokens": 508
+          }
+        ],
+        "request_count": 1,
+        "turns": []
+      },
+      "user_query": "What did the 2024 contract policy require?"
+    },
+    {
+      "case_id": "TASK-033",
+      "citation_evaluation": {
+        "citation_correctness": 1.0,
+        "evidence_coverage": 1.0,
+        "failures": [],
+        "passed": true
+      },
+      "citation_validation": [],
+      "deterministic_case_pass": true,
+      "evidence_references": [],
+      "evidence_remediation_count": 0,
+      "expected_requirements": {
+        "decision_definition": "MISSING_REQUIRED_CRITERIA",
+        "policy_support_requirement": "NONE"
+      },
+      "expected_response_outcome": "CLARIFICATION_REQUIRED",
+      "guardrail_events": [],
+      "model": "gpt-5.6-luna",
+      "model_turn_count": 0,
+      "notes": [],
+      "preflight_model_requests": 1,
+      "requirements": {
+        "clarification_question": "What criteria should determine whether a supplier is \u201cpreferred\u201d (for example, an approved supplier-list status, spend threshold, or procurement policy designation)?",
+        "decision_definition": "MISSING_REQUIRED_CRITERIA",
+        "policy_support_requirement": "NONE"
+      },
+      "requirements_decision_match": true,
+      "requirements_policy_support_match": true,
+      "response_outcome": "CLARIFICATION_REQUIRED",
+      "response_outcome_match": true,
+      "termination_reason": null,
+      "tool_call_records": [],
+      "tool_evaluation": {
+        "case_id": "TASK-033",
+        "failures": [],
+        "required_tool_coverage": 1.0,
+        "tool_selection_precision": 1.0,
+        "tool_selection_recall": 1.0,
+        "trajectory_success": true,
+        "unnecessary_tool_call_rate": 0.0
+      },
+      "tool_trajectory": [],
+      "usage": {
+        "preflight_turns": [
+          {
+            "completion_tokens": 60,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens": 454,
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "total_tokens": 514
+          }
+        ],
+        "request_count": 1,
+        "turns": []
+      },
+      "user_query": "Is Acme our preferred supplier?"
+    }
+  ],
+  "requirements_metrics": {
+    "case_count": 5,
+    "clarification_false_negative_count": 0,
+    "clarification_false_positive_count": 1,
+    "clarification_precision": 0.5,
+    "clarification_recall": 1.0,
+    "decision_definition_accuracy": 0.8,
+    "explainable_policy_evidence_precision": 1.0,
+    "explainable_policy_evidence_recall": 1.0,
+    "policy_support_classification_accuracy": 1.0
+  },
+  "requirements_version": "requirements_v2_1",
+  "run_kind": "focused_5_live_calibration",
+  "status": "completed",
+  "usage_totals": {
+    "cached_input_tokens": 10445,
+    "input_tokens": 18656,
+    "model_requests": 12,
+    "output_tokens": 1249,
+    "reasoning_tokens": 0,
+    "total_tokens": 19905
+  }
+}

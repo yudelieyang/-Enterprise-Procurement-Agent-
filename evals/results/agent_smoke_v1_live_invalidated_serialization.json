@@ -1,0 +1,6 @@
+{
+  "status": "invalidated",
+  "reason": "The first 10-case live smoke execution reached report serialization, but CitationValidationRecord was not JSON-serializable. No per-case baseline data was written, so this artifact must not be interpreted as behavioral evaluation.",
+  "failure_category": "RUNTIME_SERIALIZATION_ERROR",
+  "replacement_baseline": "agent_smoke_v1_live_baseline.json"
+}

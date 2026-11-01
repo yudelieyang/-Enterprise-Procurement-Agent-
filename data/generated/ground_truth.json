@@ -1,0 +1,119 @@
+{
+  "canonical_compliance": {
+    "PO-2026-1842": {
+      "approval": "FAIL",
+      "contract": "PASS",
+      "overall": "FAIL"
+    },
+    "PO-2026-1846": {
+      "approval": "PASS",
+      "contract": "PASS",
+      "overall": "PASS"
+    },
+    "PO-2026-1847": {
+      "approval": "REVIEW",
+      "contract": "PASS",
+      "overall": "REVIEW"
+    }
+  },
+  "duplicate_purchase_approval_behavior": "rejected_by_identity_constraint",
+  "evaluation_as_of_date": "2026-06-30",
+  "off_contract_cases": {
+    "PO-2026-1837": "FAIL",
+    "PO-2026-1838": "REVIEW",
+    "PO-2026-1839": "FAIL",
+    "PO-2026-1840": "PASS"
+  },
+  "pareto_indirect_h1_2026": {
+    "share_at_threshold": "0.8603",
+    "supplier_set_to_80pct": [
+      "SUP-005",
+      "SUP-001",
+      "SUP-004",
+      "SUP-003",
+      "SUP-002",
+      "SUP-042",
+      "SUP-017"
+    ]
+  },
+  "price_outliers": {
+    "insufficient_groups": [
+      {
+        "count": 1,
+        "item_code": "PRICE-OFF-001",
+        "reason": "peer_group_lt_8",
+        "unit_of_measure": "BOX"
+      },
+      {
+        "count": 5,
+        "item_code": "PRICE-PRD-001",
+        "reason": "peer_group_lt_8",
+        "unit_of_measure": "EA"
+      }
+    ],
+    "outlier_item_ids": [
+      "PO-2025-1910-L01",
+      "PO-2025-2009-L01"
+    ]
+  },
+  "protected_po_count": 58,
+  "row_counts": {
+    "approvals": 179,
+    "business_units": 4,
+    "categories": 6,
+    "contracts": 13,
+    "purchase_order_items": 860,
+    "purchase_orders": 480,
+    "supplier_category_eligibility": 43,
+    "suppliers": 25
+  },
+  "seed": 20260630,
+  "single_source": {
+    "multiple_qualified_counterexample": {
+      "category_id": "CAT-PRD",
+      "qualified_supplier_count": 3,
+      "spend_share": "0.9130",
+      "supplier_id": "SUP-008"
+    },
+    "noncritical_counterexample": {
+      "category_id": "CAT-OFF",
+      "qualified_supplier_count": 4,
+      "spend_share": "0.9333",
+      "supplier_id": "SUP-006"
+    },
+    "positive": {
+      "category_id": "CAT-PRO",
+      "qualified_supplier_count": 1,
+      "spend_share": "0.9091",
+      "supplier_id": "SUP-017"
+    }
+  },
+  "sup_042_growth": {
+    "absolute_increase_usd": "270000.00",
+    "growth_pct": "225.00",
+    "h1_2025_average_po_usd": "40000.00",
+    "h1_2025_po_count": 3,
+    "h1_2025_spend_usd": "120000.00",
+    "h1_2026_average_po_usd": "55714.29",
+    "h1_2026_category_contribution_usd": {
+      "CAT-IT": "240000.00",
+      "CAT-SW": "150000.00"
+    },
+    "h1_2026_po_count": 7,
+    "h1_2026_spend_usd": "390000.00",
+    "largest_h1_2026_pos": [
+      {
+        "amount_usd": "95000.00",
+        "po_number": "PO-2026-1843"
+      },
+      {
+        "amount_usd": "72000.00",
+        "po_number": "PO-2026-1842"
+      },
+      {
+        "amount_usd": "60000.00",
+        "po_number": "PO-2026-1861"
+      }
+    ]
+  }
+}

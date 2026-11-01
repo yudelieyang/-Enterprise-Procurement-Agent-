@@ -1,0 +1,17 @@
+{
+  "requirements_version": "requirements_v2",
+  "cases": [
+    {"case_key": "sql_aggregation", "user_query": "What was procurement spend by business unit in the past six months?", "decision_definition": "SUFFICIENT", "policy_support_requirement": "NONE"},
+    {"case_key": "sql_ranking", "user_query": "Which supplier had the highest IT Services spend in Q2 2026?", "decision_definition": "SUFFICIENT", "policy_support_requirement": "NONE"},
+    {"case_key": "supported_analytics", "user_query": "How did SUP-042's H1 spend grow year over year?", "decision_definition": "SUFFICIENT", "policy_support_requirement": "NONE"},
+    {"case_key": "status_only_compliance", "user_query": "Audit PO-2026-1846 for deterministic policy compliance.", "decision_definition": "SUFFICIENT", "policy_support_requirement": "STATUS_ONLY"},
+    {"case_key": "explainable_compliance", "user_query": "Is PO-2026-1842 compliant with procurement policy?", "decision_definition": "SUFFICIENT", "policy_support_requirement": "EXPLAINABLE_POLICY_EVIDENCE"},
+    {"case_key": "explained_audit", "user_query": "Audit the purchase order and explain the applicable policy basis with citations.", "decision_definition": "SUFFICIENT", "policy_support_requirement": "EXPLAINABLE_POLICY_EVIDENCE"},
+    {"case_key": "policy_explanation", "user_query": "Explain the policy basis for contract requirements and cite the source.", "decision_definition": "SUFFICIENT", "policy_support_requirement": "EXPLAINABLE_POLICY_EVIDENCE"},
+    {"case_key": "policy_only_rag", "user_query": "What approvals are required for a purchase above $50,000?", "decision_definition": "SUFFICIENT", "policy_support_requirement": "EXPLAINABLE_POLICY_EVIDENCE"},
+    {"case_key": "undefined_decision_criterion", "user_query": "Is Acme our preferred supplier?", "decision_definition": "MISSING_REQUIRED_CRITERIA", "policy_support_requirement": "NONE"},
+    {"case_key": "ambiguous_entity", "user_query": "Is the purchase order compliant?", "decision_definition": "AMBIGUOUS_ENTITY", "policy_support_requirement": "NONE"},
+    {"case_key": "missing_essential_scope", "user_query": "How did supplier spend change?", "decision_definition": "MISSING_REQUIRED_SCOPE", "policy_support_requirement": "NONE"},
+    {"case_key": "broad_but_answerable", "user_query": "Show total procurement spend by business unit.", "decision_definition": "SUFFICIENT", "policy_support_requirement": "NONE"}
+  ]
+}

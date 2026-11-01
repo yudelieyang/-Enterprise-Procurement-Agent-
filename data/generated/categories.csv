@@ -1,0 +1,7 @@
+category_id,category_code,name,procurement_class,is_critical,contract_required
+CAT-SW,SOFTWARE_LICENSES,Software Licenses,INDIRECT,true,false
+CAT-IT,IT_SERVICES,IT Services,INDIRECT,true,true
+CAT-PRO,PROFESSIONAL_SERVICES,Professional Services,INDIRECT,true,true
+CAT-OFF,OFFICE_SUPPLIES,Office Supplies,INDIRECT,false,false
+CAT-FAC,FACILITIES_MAINTENANCE,Facilities Maintenance,INDIRECT,false,false
+CAT-PRD,PRODUCTION_MATERIALS,Production Materials,DIRECT,true,false

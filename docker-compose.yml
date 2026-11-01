@@ -1,0 +1,14 @@
+services:
+  pgvector:
+    image: pgvector/pgvector:pg18
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-procurement_agent}
+      POSTGRES_USER: ${POSTGRES_USER:-procurement_agent}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?copy .env.example to .env and set a local password}
+    ports:
+      - "${POSTGRES_PORT:-5433}:5432"
+    volumes:
+      - pgvector_data:/var/lib/postgresql
+
+volumes:
+  pgvector_data:

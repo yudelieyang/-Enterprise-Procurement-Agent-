@@ -1,0 +1,248 @@
+{
+  "chunk_count": 30,
+  "chunk_registry_hash": "faed7d6183568d42e56ae7cf5c01d2092da018140d16652a16c0807264fa4a16",
+  "failures": [
+    {
+      "actual_top_results": [
+        {
+          "chunk_id": "SUPPLIER_SELECTION_2026_1:2026.1:p3:s4:c1",
+          "document_id": "SUPPLIER_SELECTION_2026_1",
+          "page_number": 3,
+          "score": 0.56886,
+          "section_label": "Section 4",
+          "version": "2026.1"
+        },
+        {
+          "chunk_id": "CONTRACT_COMPLIANCE_2026_1:2026.1:p1:s1:c1",
+          "document_id": "CONTRACT_COMPLIANCE_2026_1",
+          "page_number": 1,
+          "score": 0.56699,
+          "section_label": "Section 1",
+          "version": "2026.1"
+        },
+        {
+          "chunk_id": "CORP_PROCUREMENT_2026_1:2026.1:p2:s2:c1",
+          "document_id": "CORP_PROCUREMENT_2026_1",
+          "page_number": 2,
+          "score": 0.540143,
+          "section_label": "Section 2",
+          "version": "2026.1"
+        }
+      ],
+      "case_id": "RET-007",
+      "expected_evidence": [
+        {
+          "document_id": "CONTRACT_COMPLIANCE_2026_1",
+          "page_number": 2,
+          "section_label": "Section 4.1",
+          "version": "2026.1"
+        }
+      ],
+      "failure_category": "DISTRACTOR_RANKING",
+      "query": "Which procurement categories require a valid contract in 2026?"
+    },
+    {
+      "actual_top_results": [
+        {
+          "chunk_id": "CORP_PROCUREMENT_2025_1:2025.1:p2:s2:c1",
+          "document_id": "CORP_PROCUREMENT_2025_1",
+          "page_number": 2,
+          "score": 0.589154,
+          "section_label": "Section 2",
+          "version": "2025.1"
+        },
+        {
+          "chunk_id": "CORP_PROCUREMENT_2025_1:2025.1:p3:s5:c1",
+          "document_id": "CORP_PROCUREMENT_2025_1",
+          "page_number": 3,
+          "score": 0.559854,
+          "section_label": "Section 5",
+          "version": "2025.1"
+        },
+        {
+          "chunk_id": "CORP_PROCUREMENT_2025_1:2025.1:p1:s1:c1",
+          "document_id": "CORP_PROCUREMENT_2025_1",
+          "page_number": 1,
+          "score": 0.547036,
+          "section_label": "Section 1",
+          "version": "2025.1"
+        }
+      ],
+      "case_id": "RET-011",
+      "expected_evidence": [
+        {
+          "document_id": "CONTRACT_COMPLIANCE_2025_1",
+          "page_number": 2,
+          "section_label": "Section 4.1",
+          "version": "2025.1"
+        }
+      ],
+      "failure_category": "DISTRACTOR_RANKING",
+      "query": "Did 2025 procurement policy allow business units to bypass contracts?"
+    },
+    {
+      "actual_top_results": [
+        {
+          "chunk_id": "CORP_PROCUREMENT_2026_1:2026.1:p3:s4:c1",
+          "document_id": "CORP_PROCUREMENT_2026_1",
+          "page_number": 3,
+          "score": 0.61786,
+          "section_label": "Section 4",
+          "version": "2026.1"
+        },
+        {
+          "chunk_id": "SUPPLIER_SELECTION_2026_1:2026.1:p3:s4:c1",
+          "document_id": "SUPPLIER_SELECTION_2026_1",
+          "page_number": 3,
+          "score": 0.61007,
+          "section_label": "Section 4",
+          "version": "2026.1"
+        },
+        {
+          "chunk_id": "SUPPLIER_SELECTION_2026_1:2026.1:p2:s2:c1",
+          "document_id": "SUPPLIER_SELECTION_2026_1",
+          "page_number": 2,
+          "score": 0.58766,
+          "section_label": "Section 2",
+          "version": "2026.1"
+        }
+      ],
+      "case_id": "RET-015",
+      "expected_evidence": [
+        {
+          "document_id": "SUPPLIER_SELECTION_2026_1",
+          "page_number": 2,
+          "section_label": "Section 3",
+          "version": "2026.1"
+        }
+      ],
+      "failure_category": "DISTRACTOR_RANKING",
+      "query": "What should procurement do about critical-category supplier dependency and one qualified vendor?"
+    },
+    {
+      "actual_top_results": [
+        {
+          "chunk_id": "APPROVAL_MATRIX_2026_1:2026.1:p2:s4_2:c1",
+          "document_id": "APPROVAL_MATRIX_2026_1",
+          "page_number": 2,
+          "score": 0.582288,
+          "section_label": "Section 4.2",
+          "version": "2026.1"
+        },
+        {
+          "chunk_id": "APPROVAL_MATRIX_2026_1:2026.1:p1:s1:c1",
+          "document_id": "APPROVAL_MATRIX_2026_1",
+          "page_number": 1,
+          "score": 0.57479,
+          "section_label": "Section 1",
+          "version": "2026.1"
+        },
+        {
+          "chunk_id": "APPROVAL_MATRIX_2026_1:2026.1:p3:s5:c1",
+          "document_id": "APPROVAL_MATRIX_2026_1",
+          "page_number": 3,
+          "score": 0.570265,
+          "section_label": "Section 5",
+          "version": "2026.1"
+        }
+      ],
+      "case_id": "RET-018",
+      "expected_evidence": [
+        {
+          "document_id": "APPROVAL_MATRIX_2026_1",
+          "page_number": 2,
+          "section_label": "Section 4.2",
+          "version": "2026.1"
+        },
+        {
+          "document_id": "CONTRACT_COMPLIANCE_2026_1",
+          "page_number": 2,
+          "section_label": "Section 4.1",
+          "version": "2026.1"
+        }
+      ],
+      "failure_category": "MULTI_EVIDENCE_MISS",
+      "query": "For a high-value IT Services purchase, where do approval authority and contract exception requirements come from?"
+    },
+    {
+      "actual_top_results": [
+        {
+          "chunk_id": "CORP_PROCUREMENT_2026_1:2026.1:p3:s5:c1",
+          "document_id": "CORP_PROCUREMENT_2026_1",
+          "page_number": 3,
+          "score": 0.660794,
+          "section_label": "Section 5",
+          "version": "2026.1"
+        },
+        {
+          "chunk_id": "CONTRACT_COMPLIANCE_2026_1:2026.1:p2:s4_1:c1",
+          "document_id": "CONTRACT_COMPLIANCE_2026_1",
+          "page_number": 2,
+          "score": 0.630013,
+          "section_label": "Section 4.1",
+          "version": "2026.1"
+        },
+        {
+          "chunk_id": "APPROVAL_MATRIX_2026_1:2026.1:p3:s5:c1",
+          "document_id": "APPROVAL_MATRIX_2026_1",
+          "page_number": 3,
+          "score": 0.529363,
+          "section_label": "Section 5",
+          "version": "2026.1"
+        }
+      ],
+      "case_id": "RET-019",
+      "expected_evidence": [
+        {
+          "document_id": "CORP_PROCUREMENT_2026_1",
+          "page_number": 3,
+          "section_label": "Section 5",
+          "version": "2026.1"
+        },
+        {
+          "document_id": "APPROVAL_MATRIX_2026_1",
+          "page_number": 2,
+          "section_label": "Section 4.2",
+          "version": "2026.1"
+        },
+        {
+          "document_id": "CONTRACT_COMPLIANCE_2026_1",
+          "page_number": 2,
+          "section_label": "Section 4.1",
+          "version": "2026.1"
+        }
+      ],
+      "failure_category": "MULTI_EVIDENCE_MISS",
+      "query": "Which policy governs a contract exception and which policy governs purchase approvals?"
+    }
+  ],
+  "local_dense_metrics": {
+    "case_count": 21,
+    "empty_candidate_case_count": 1,
+    "empty_candidate_pass_count": 1,
+    "hit_at_1": 0.75,
+    "hit_at_3": 0.85,
+    "mrr": 0.7916666666666666,
+    "recall_at_3": 0.8083333333333333,
+    "scored_case_count": 20
+  },
+  "pgvector_dense_metrics": {
+    "case_count": 21,
+    "empty_candidate_case_count": 1,
+    "empty_candidate_pass_count": 1,
+    "hit_at_1": 0.75,
+    "hit_at_3": 0.85,
+    "mrr": 0.7916666666666666,
+    "recall_at_3": 0.8083333333333333,
+    "scored_case_count": 20
+  },
+  "ranking_equivalence": {
+    "case_count": 21,
+    "differences": [],
+    "identical_case_count": 21
+  },
+  "versions": {
+    "pgvector": "0.8.6",
+    "postgresql": "18.6 (Debian 18.6-1.pgdg12+2)"
+  }
+}

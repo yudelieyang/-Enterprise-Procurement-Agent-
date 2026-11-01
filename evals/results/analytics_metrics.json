@@ -1,0 +1,140 @@
+{
+  "by_kind": {
+    "concentration": {
+      "case_count": 3,
+      "passed": 3
+    },
+    "price": {
+      "case_count": 4,
+      "passed": 4
+    },
+    "spend": {
+      "case_count": 1,
+      "passed": 1
+    },
+    "spend_drivers": {
+      "case_count": 1,
+      "passed": 1
+    },
+    "zero_base": {
+      "case_count": 1,
+      "passed": 1
+    }
+  },
+  "case_count": 10,
+  "failed": 0,
+  "passed": 10,
+  "records": [
+    {
+      "actual": {
+        "absolute_change": "270000.00",
+        "comparison_po_count": 3,
+        "comparison_spend": "120000.00",
+        "current_po_count": 7,
+        "current_spend": "390000.00",
+        "percentage_change": "225.00"
+      },
+      "case_id": "ANL-001",
+      "kind": "spend",
+      "passed": true
+    },
+    {
+      "actual": {
+        "growth_basis": "ZERO_BASE_NO_SPEND",
+        "percentage_change": null
+      },
+      "case_id": "ANL-002",
+      "kind": "zero_base",
+      "passed": true
+    },
+    {
+      "actual": {
+        "categories": {
+          "CAT-IT": "170000.00",
+          "CAT-SW": "100000.00"
+        },
+        "largest": [
+          "PO-2026-1843",
+          "PO-2026-1842",
+          "PO-2026-1861"
+        ]
+      },
+      "case_id": "ANL-003",
+      "kind": "spend_drivers",
+      "passed": true
+    },
+    {
+      "actual": {
+        "analysis_status": "ANALYZED",
+        "outliers": [
+          "PO-2025-1910-L01"
+        ]
+      },
+      "case_id": "ANL-004",
+      "kind": "price",
+      "passed": true
+    },
+    {
+      "actual": {
+        "analysis_status": "ANALYZED",
+        "outliers": [
+          "PO-2025-2009-L01"
+        ]
+      },
+      "case_id": "ANL-005",
+      "kind": "price",
+      "passed": true
+    },
+    {
+      "actual": {
+        "analysis_status": "INSUFFICIENT_PEER_GROUP",
+        "outliers": []
+      },
+      "case_id": "ANL-006",
+      "kind": "price",
+      "passed": true
+    },
+    {
+      "actual": {
+        "analysis_status": "INSUFFICIENT_PEER_GROUP",
+        "outliers": []
+      },
+      "case_id": "ANL-007",
+      "kind": "price",
+      "passed": true
+    },
+    {
+      "actual": {
+        "qualified_supplier_count": 1,
+        "risk_finding": true,
+        "top_supplier_id": "SUP-017",
+        "top_supplier_share": "0.9091"
+      },
+      "case_id": "ANL-008",
+      "kind": "concentration",
+      "passed": true
+    },
+    {
+      "actual": {
+        "qualified_supplier_count": 4,
+        "risk_finding": false,
+        "top_supplier_id": "SUP-006",
+        "top_supplier_share": "0.9333"
+      },
+      "case_id": "ANL-009",
+      "kind": "concentration",
+      "passed": true
+    },
+    {
+      "actual": {
+        "qualified_supplier_count": 3,
+        "risk_finding": false,
+        "top_supplier_id": "SUP-008",
+        "top_supplier_share": "0.9130"
+      },
+      "case_id": "ANL-010",
+      "kind": "concentration",
+      "passed": true
+    }
+  ]
+}

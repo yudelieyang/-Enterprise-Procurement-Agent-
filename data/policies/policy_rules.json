@@ -1,0 +1,28 @@
+{
+  "rules": [
+    {
+      "rule_code": "APPROVAL_OVER_50000_2026",
+      "rule_type": "approval_requirement",
+      "human_readable_meaning": "A purchase order strictly above USD 50,000 requires two distinct valid PURCHASE approvals, including at least one DIRECTOR approval.",
+      "applicability": "Eligible ISSUED or CLOSED purchase orders dated on or after 2026-01-01 with total amount strictly greater than USD 50,000.",
+      "parameters": {"amount_operator": ">", "amount_usd": 50000, "minimum_distinct_purchase_approvals": 2, "requires_director": true, "valid_approval": "PURCHASE, APPROVED, on or before order date, distinct approver"},
+      "source_document_id": "APPROVAL_MATRIX_2026_1",
+      "source_version": "2026.1",
+      "source_section": "Section 4.2",
+      "source_page": 2,
+      "canonical_source_phrase": "strictly greater than USD 50,000 requires two distinct valid PURCHASE approvals, including at least one valid approval by a DIRECTOR"
+    },
+    {
+      "rule_code": "CONTRACT_REQUIRED_CATEGORIES_2026",
+      "rule_type": "contract_requirement",
+      "human_readable_meaning": "IT Services and Professional Services purchase orders require a valid contract at issuance or a documented, DIRECTOR-approved contract exception recorded no later than issuance.",
+      "applicability": "Eligible ISSUED or CLOSED purchase orders dated on or after 2026-01-01 in IT Services or Professional Services.",
+      "parameters": {"contract_required_categories": ["IT Services", "Professional Services"], "valid_contract": "resolved, supplier and category match, covers order date, and is not terminated on or before order date", "valid_exception": "CONTRACT_EXCEPTION, APPROVED, DIRECTOR, on or before order date"},
+      "source_document_id": "CONTRACT_COMPLIANCE_2026_1",
+      "source_version": "2026.1",
+      "source_section": "Section 4.1",
+      "source_page": 2,
+      "canonical_source_phrase": "a valid contract at issuance is required unless a documented contract exception was approved by a DIRECTOR no later than issuance"
+    }
+  ]
+}

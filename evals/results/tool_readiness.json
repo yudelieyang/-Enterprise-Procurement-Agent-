@@ -1,0 +1,105 @@
+{
+  "case_count": 14,
+  "failed": 0,
+  "passed": 14,
+  "records": [
+    {
+      "case_id": "TOOL-001",
+      "error_code": null,
+      "passed": true,
+      "success": true,
+      "tool_name": "query_procurement_database"
+    },
+    {
+      "case_id": "TOOL-002",
+      "error_code": "SQL_SAFETY_VIOLATION",
+      "passed": true,
+      "success": false,
+      "tool_name": "query_procurement_database"
+    },
+    {
+      "case_id": "TOOL-003",
+      "error_code": "SQL_EXECUTION_ERROR",
+      "passed": true,
+      "success": false,
+      "tool_name": "query_procurement_database"
+    },
+    {
+      "case_id": "TOOL-004",
+      "error_code": null,
+      "passed": true,
+      "success": true,
+      "tool_name": "retrieve_procurement_policy"
+    },
+    {
+      "case_id": "TOOL-005",
+      "error_code": null,
+      "passed": true,
+      "success": true,
+      "tool_name": "retrieve_procurement_policy"
+    },
+    {
+      "case_id": "TOOL-006",
+      "error_code": null,
+      "passed": true,
+      "success": true,
+      "tool_name": "analyze_procurement_data"
+    },
+    {
+      "case_id": "TOOL-007",
+      "error_code": null,
+      "passed": true,
+      "success": true,
+      "tool_name": "analyze_procurement_data"
+    },
+    {
+      "case_id": "TOOL-008",
+      "error_code": null,
+      "passed": true,
+      "success": true,
+      "tool_name": "analyze_procurement_data"
+    },
+    {
+      "case_id": "TOOL-009",
+      "error_code": null,
+      "passed": true,
+      "success": true,
+      "tool_name": "analyze_procurement_data"
+    },
+    {
+      "case_id": "TOOL-010",
+      "error_code": null,
+      "passed": true,
+      "success": true,
+      "tool_name": "analyze_procurement_data"
+    },
+    {
+      "case_id": "TOOL-011",
+      "error_code": null,
+      "passed": true,
+      "success": true,
+      "tool_name": "check_policy_compliance"
+    },
+    {
+      "case_id": "TOOL-012",
+      "error_code": null,
+      "passed": true,
+      "success": true,
+      "tool_name": "check_policy_compliance"
+    },
+    {
+      "case_id": "TOOL-013",
+      "error_code": null,
+      "passed": true,
+      "success": true,
+      "tool_name": "check_policy_compliance"
+    },
+    {
+      "case_id": "TOOL-014",
+      "error_code": "ENTITY_NOT_FOUND",
+      "passed": true,
+      "success": false,
+      "tool_name": "check_policy_compliance"
+    }
+  ]
+}

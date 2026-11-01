@@ -1,0 +1,55 @@
+# Secrets and local environment files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+.secrets/
+
+# Python environments, caches, and build output
+.venv/
+venv/
+env/
+.cache/
+**/.cache/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local scratch and recovery copies
+tmp/
+temp/
+recovery_backup_*/
+*.log
+*.tmp
+*.temp
+
+# Local databases, dumps, and backups
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+*.sql.gz
+*.backup
+*.bak
+*.old
+*.orig
+data/generated/*.sqlite*
+
+# Local model artifacts and editor/OS files
+models/
+huggingface/
+Thumbs.db
+.DS_Store
+.vscode/
+.idea/

@@ -1,0 +1,14 @@
+{
+  "cases": [
+    {"case_id":"ANL-001","kind":"spend","supplier_id":"SUP-042","expected":{"comparison_spend":"120000.00","current_spend":"390000.00","absolute_change":"270000.00","percentage_change":"225.00","comparison_po_count":3,"current_po_count":7}},
+    {"case_id":"ANL-002","kind":"zero_base","supplier_id":"SUP-NONE","expected_basis":"ZERO_BASE_NO_SPEND"},
+    {"case_id":"ANL-003","kind":"spend_drivers","supplier_id":"SUP-042","expected_categories":{"CAT-IT":"170000.00","CAT-SW":"100000.00"},"expected_largest":["PO-2026-1843","PO-2026-1842","PO-2026-1861"]},
+    {"case_id":"ANL-004","kind":"price","item_code":"PRICE-OFF-001","unit_of_measure":"EA","expected_status":"ANALYZED","expected_outliers":["PO-2025-1910-L01"]},
+    {"case_id":"ANL-005","kind":"price","item_code":"PRICE-FAC-001","unit_of_measure":"EA","expected_status":"ANALYZED","expected_outliers":["PO-2025-2009-L01"]},
+    {"case_id":"ANL-006","kind":"price","item_code":"PRICE-OFF-001","unit_of_measure":"BOX","expected_status":"INSUFFICIENT_PEER_GROUP","expected_outliers":[]},
+    {"case_id":"ANL-007","kind":"price","item_code":"PRICE-PRD-001","unit_of_measure":"EA","expected_status":"INSUFFICIENT_PEER_GROUP","expected_outliers":[]},
+    {"case_id":"ANL-008","kind":"concentration","category_id":"CAT-PRO","expected_top":"SUP-017","expected_share":"0.9091","expected_qualified":1,"expected_risk":true},
+    {"case_id":"ANL-009","kind":"concentration","category_id":"CAT-OFF","expected_top":"SUP-006","expected_share":"0.9333","expected_qualified":4,"expected_risk":false},
+    {"case_id":"ANL-010","kind":"concentration","category_id":"CAT-PRD","expected_top":"SUP-008","expected_share":"0.9130","expected_qualified":3,"expected_risk":false}
+  ]
+}
